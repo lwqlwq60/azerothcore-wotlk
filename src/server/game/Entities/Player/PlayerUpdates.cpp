@@ -429,7 +429,6 @@ void Player::Update(uint32 p_time)
     if (_botMgr)
         _botMgr->Update(p_time);
     //end Npcbot
-    sScriptMgr->OnAfterPlayerUpdate(this, p_time);
 }
 
 void Player::UpdateMirrorTimers()
