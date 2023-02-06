@@ -2212,7 +2212,7 @@ bool ConditionMgr::isConditionTypeValid(Condition* cond)
             }
             if (cond->ConditionValue3)
             {
-                if (GameObjectData const* goData = sObjectMgr->GetGOData(cond->ConditionValue3))
+                if (GameObjectData const* goData = sObjectMgr->GetGameObjectData(cond->ConditionValue3))
                 {
                     if (cond->ConditionValue2 && goData->id != cond->ConditionValue2)
                     {
